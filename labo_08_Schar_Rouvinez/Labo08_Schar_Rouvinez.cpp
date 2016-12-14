@@ -47,10 +47,10 @@ do{
    int tabElements[nbElements] = {};
 
    //générer les lancés aléatoires en fonction du nombre choisi par l'utilssateur
-   genStat(tabElements,nbElements,MIN_ELEMENTS,nbThrows);
+   addRandValue(tabElements,nbElements,MIN_ELEMENTS,nbThrows);
 
    //afficher les valeurs générées sous forme de graphe
-   printStat(tabElements, nbElements, nbThrows);
+   computeStat(tabElements, nbElements, nbThrows);
 
    //l'utilisateur à le choix de recommencer
 }while(doAgain());

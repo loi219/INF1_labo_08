@@ -12,7 +12,9 @@
 #include "utils.h"
 #include <ctime>
 #include <cstdlib>
-/***************************SAISIE****************************/
+
+
+/***************************Recommencer****************************/
 bool doAgain() {
 
 	char const YES = 'Y';
@@ -32,6 +34,7 @@ bool doAgain() {
 	return (toupper(answer) == YES);
 }
 
+/***************************Saisie****************************/
 int input(const string& message, int limitMin, int limitMax,
 		const int WIDTH_INT, const int WIDTH_TEXT, const string error) {
 	int userInput;
@@ -54,11 +57,13 @@ int input(const string& message, int limitMin, int limitMax,
 	return userInput;
 }
 
+/***************************Quitter****************************/
 void toQuit(string message) {
 	cout << message;
 	cin.get();
 }
 
+/***************************Aléatoire****************************/
 int random(const int min, const int max) {
 
 	//initialisation du générateur une seule fois au début du programme
@@ -68,4 +73,4 @@ int random(const int min, const int max) {
 		first = ! first;
 	}
 	return (rand() % (max - min + 1)) + min;
-}//fin alea
+}//fin random

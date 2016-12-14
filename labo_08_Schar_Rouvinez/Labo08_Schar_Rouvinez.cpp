@@ -29,7 +29,6 @@ int main(){
    const int MAX_ELEMENTS = 100;
    const string MSG_ELEMTNS = "nbre elements";
 
-
    const int MIN_THROWS = 0;
    const int MAX_THROWS = 10000;
    const string MSG_THROWS = "nbre de lances";
@@ -39,25 +38,24 @@ int main(){
    const string MSG_ERROR = "Mauvaise saisie";
 
 
-
 do{
-
+   //saisie du nombre d'éléments et du nombre de lancés par l'utilisateur
    int nbElements = input(MSG_ELEMTNS, MIN_ELEMENTS, MAX_ELEMENTS, WIDTH_INT, WIDTH_MSG, MSG_ERROR);
    int nbThrows   = input(MSG_THROWS, MIN_THROWS, MAX_THROWS, WIDTH_INT, WIDTH_MSG, MSG_ERROR);
 
+   //initialisation du tableau en fonction du nombre d'éléments choisis par l'utilisateur
    int tabElements[nbElements] = {};
 
+   //générer les lancés aléatoires en fonction du nombre choisi par l'utilssateur
    genStat(tabElements,nbElements,MIN_ELEMENTS,nbThrows);
 
-   getPercent(tabElements, nbElements, nbThrows);
+   //afficher les valeurs générées sous forme de graphe
+   printStat(tabElements, nbElements, nbThrows);
 
-   printStat(tabElements, nbElements);
-
-
+   //l'utilisateur à le choix de recommencer
 }while(doAgain());
 
-
-
+   toQuit("Pressez ENTER pour quitter.");
 
 	return EXIT_SUCCESS;
 }

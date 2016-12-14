@@ -2,36 +2,34 @@
  * Auteur : Sven Rouvinez - Joel Schär / HEIG-VD
  * Date: 13.12.2016
  *
- * But:
+ * But: fonctions nécessaire pour générer les tableaux et faire les statistiques
  *
- *
- * Modifications :
  *
  */
 
 #include "utils.h"
 #include <cmath>
 
+void addRandValue(int tab[], const int nbElements, const int minElement,
+		const int throws) {
 
-void genStat(int tab[], const int elements, const int minElement, int throws){
-
-   for(int i = 0;i < throws; i++){
-      tab[random(minElement, elements)] += 1;
-   }
-
+	for (int i = 0; i < throws; i++) {
+		tab[random(minElement, nbElements)] += 1;
+	}
 }
 
-void getPercent(int tab[], const int elements, const int throws){
-   for (int i = 0; i < elements; i++){
-      tab[i] = (int) round( (double)tab[i] / throws * 100);
-   }
-}
 
-void printStat(int tab[], const int elements){
-   for(int i = 0; i < elements; i++ ){
-      cout << setw(10) << "element [" << i << "]" << setw (10) << tab[i] << "    ";
-      for(int p = 0; p < tab[i]; p++)
-         cout << "=";
-      cout << endl;
-   }
+void computeStat(const int tab[], const int nbElements, const int throws) {
+const int SPACE = 10;
+
+	for (int i = 0; i < nbElements; i++) {
+
+		int percentElement = (int) round((double) tab[i] / throws * 100);
+		cout << setw(SPACE) << "element [" << i << "]" << setw(SPACE)
+				<< percentElement << "    ";
+
+		for (int p = 0; p < percentElement; p++)
+			cout << "=";
+			cout << endl;
+	}
 }

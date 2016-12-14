@@ -30,63 +30,50 @@ using namespace std;
 
 
 /**
- * @brief: asks the user if he wants to restart or exit the program
- *       checks if the inputs are valid
+ * @brief: demande à l'utilisateur s'il veut recommencer
  *
  * parameters:
  *      none
  *
- * @return:
- *      isValid: boolean containing the answer of the user to the question
- *               "do you want to start again?"
+ * @return isValid retourne la réponse en boolean de l'utilisateur
  **/
 bool doAgain();
 
 /**
- * @brief: asks the user which values he wants to use for the program
- *       checks if the inputs are valid
- *       if the inputs are not valid, asks again the user to enter the values
+ * @brief: demande à l'utilisateur les valeurs qu'il veut et retourne la valeure correcte selon des critères
  *
  * parameters:
- *      @param message   : string that contains the message asking the user about
- *                         the values needed in the program
- *      @param limitMin  : int that contains the lowest integer that the user
- *                         is allowed to enter
- *      @param limitMax  : int that contains the highest integer that the user
- *                         is allowed to enter
- *      @param error     : string that contains a message noticing the user that
- *                         he entered an invalid value
- *      @param WIDTH_INT : const int that contains the width of the left margin
- *      @param WIDTH_TEXT: const int that contains a width that will be used
- *                         to align the text that is displayed
+ *      @param [in] message message d'invitation pour à l'utilisateur pour entrer sa valeur
+ *      @param [in] limitMin borne minimal
+ *      @param [in] limitMax borne maximal
+ *      @param [in] error affiche ce message si l'entrée est fausse
+ *      @param [in] WIDTH_INT contient la valeur de la largeur
+ *      @param [in] WIDTH_TEXT largeur utilisée pour aligner le texte
  *
  *
- * @return:
- *      userInput : int contianing the value that the user entered
+ * @return userInput valeur entrée par l'utilisateur
+ *
  **/
 int input(const string& message, int limitMin, int limitMax, const int WIDTH_INT=WIDTH_INT_BASE, const int WIDTH_TEXT=WIDTH_TEXT_BASE, const string error="Mauvaise saisie. Veuillez reessayez");
 
 
 /**
- * @brief: Show a prompt for the user to definitely quit the program.
+ * @brief: affiche un message pour demander à l'utlisateur s'il veut quitter
  *
- * parameters:
- *      @param message : string containing the exit message
+ * @param [in] message message affiché à l'utilisateur
  *
- * @return:
- *      nothing
+ * @return none
  **/
 void toQuit(string message);
 
 /**
- * @brief:
+ * @brief: génère un chiffre aléatoire dans une intervalle donnée
  *
- * parameters:
- *      @param min :
- *      @param max :
+ * @param [in] min valeur minimum
+ * @param [in] max valeur maximum
  *
- * @return:
- *      nothing
+ * @return none
+ *
  **/
 int random(const int min, const int max);
 

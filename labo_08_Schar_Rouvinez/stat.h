@@ -2,7 +2,7 @@
  * Auteur : Sven Rouvinez - Joel Schär / HEIG-VD
  * Date: 13.12.2016
  *
- * But:
+ * But: fonctions nécessaire pour générer les tableaux et faire les statistiques
  *
  * Modifications :
  *
@@ -15,21 +15,30 @@
 
 
 /**
- * @brief: asks the user if he wants to restart or exit the program
- *       checks if the inputs are valid
+ * @brief: insère les valeurs dans un tableau
  *
  * parameters:
- *      none
+ * @param [in] tab[] tableau qui sera rempli
+ * @param [in] elements nombre d'éléments dans le tableau
+ * @param [in] minElement élément de départ
+ * @param [in] throws nombre de lancés
  *
- * @return:
- *      isValid: boolean containing the answer of the user to the question
- *               "do you want to start again?"
- **/
-void genStat(int tab[], const int elements, const int minElement, int throws);
+ *
+ * @return: none
+ */
 
+void addRandValue(int tab[], const int elements, const int minElement, int throws);
 
-void getPercent(int tab[], const int elements, const int throws);
-
-void printStat(int tab[], const int elements);
+/**
+ * @brief: calcul les pourcentages d'éléments présents
+ *
+ * parameters:
+ * @param [in] tab[] tableau de valeurs
+ * @param [in] elements
+ * @param [in] throws nombre de lancés
+ *
+ * @return: none
+ */
+void computeStat(const int tab[], const int elements, const int throws);
 
 #endif //INF1_LABO_08_STAT_H

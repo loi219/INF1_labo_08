@@ -4,15 +4,11 @@
  *
  * But: fonctions nécessaire pour générer les tableaux et faire les statistiques
  *
- * Modifications :
  *
  */
 
-
 #ifndef INF1_LABO_08_STAT_H
 #define INF1_LABO_08_STAT_H
-
-
 
 /**
  * @brief: insère les valeurs dans un tableau
@@ -23,10 +19,8 @@
  * @param [in] minElement élément de départ
  * @param [in] throws nombre de lancés
  *
- *
  * @return: none
  */
-
 void addRandValue(int tab[], const int elements, const int minElement, int throws);
 
 /**

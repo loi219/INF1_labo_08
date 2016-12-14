@@ -1,6 +1,6 @@
 /* Fichier : utils.h
- * Auteur : Yohann Meyer - Sven Rouvinez / HEIG-VD
- * Date: 06.12.2016
+ * Auteur : Sven Rouvinez - Joel Schär / HEIG-VD
+ * Date: 12.12.2016
  *
  * But: Start of a library containing the necessary base functions
  *      of any program.
@@ -20,13 +20,11 @@
 #include <climits>
 
 
-
 #define CLEAR_BUFFER cin.ignore(INT_MAX, '\n')
 #define WIDTH_INT_BASE 4u
 #define WIDTH_TEXT_BASE 30u
 
 using namespace std;
-
 
 
 /**
@@ -76,6 +74,5 @@ void toQuit(string message);
  *
  **/
 int random(const int min, const int max);
-
 
 #endif //LABO07_UTILS_H

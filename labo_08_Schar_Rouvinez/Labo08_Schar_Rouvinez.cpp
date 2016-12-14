@@ -4,13 +4,14 @@ Laboratoire : Labo08
 
 Fichier     : Labo08_Schar_Rouvinez.cpp
 
-Auteur(s)   :
+Auteur(s)   : Sven Rouvinez - Joel Schär / HEIG-VD
 
 Date        : Dec 12, 2016
 
-But         :
+But         : Simuler un nombre choisi par l'utilisateur de lancés de dés. Cette simulation
+              est mise en forme et affichée sour forme de graph.
 
-Remarque(s) :
+Remarque(s) : aucune
 
 Compilateur : gcc version 6.2.1 20160916 (Red Hat 6.2.1-2) (GCC)
 ---------------------------------------------------------------------------------------
@@ -25,16 +26,16 @@ using namespace std;
 
 int main(){
 
-   const int MIN_ELEMENTS = 0;
-   const int MAX_ELEMENTS = 100;
+   const int   MIN_ELEMENTS = 0;
+   const int   MAX_ELEMENTS = 100;
    const string MSG_ELEMTNS = "nbre elements";
 
-   const int MIN_THROWS = 0;
-   const int MAX_THROWS = 10000;
+   const int    MIN_THROWS = 0;
+   const int    MAX_THROWS = 10000;
    const string MSG_THROWS = "nbre de lances";
 
-   const int WIDTH_MSG = 16;
-   const int WIDTH_INT = 1;
+   const int    WIDTH_MSG = 16;
+   const int    WIDTH_INT = 1;
    const string MSG_ERROR = "Mauvaise saisie";
 
 

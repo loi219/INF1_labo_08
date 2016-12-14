@@ -1,13 +1,14 @@
 /* Fichier : utils.cpp
- * Auteur : Yohann Meyer - Sven Rouvinez / HEIG-VD
- * Date: 06.12.2016
- *
- * But:
- *
- *
- * Modifications : 06.12.2016 / Sven Rouvinez / Updating the commentary
- *
- */
+* Auteur : Sven Rouvinez - Joel Schär / HEIG-VD
+* Date: 12.12.2016
+*
+* But: Start of a library containing the necessary base functions
+*      of any program.
+*      For now, contain input and 'try again' loop.
+*
+* Modifications : 06.12.2016 / Sven Rouvinez / Updating the commentary
+*
+*/
 
 #include "utils.h"
 #include <ctime>

@@ -11,7 +11,7 @@ Date        : Dec 12, 2016
 But         : Simuler un nombre choisi par l'utilisateur de lancés de dés. Cette simulation
               est mise en forme et affichée sour forme de graph.
 
-Remarque(s) : aucune
+Remarque(s) : utilisation uniquement de tableau "C"
 
 Compilateur : gcc version 6.2.1 20160916 (Red Hat 6.2.1-2) (GCC)
 ---------------------------------------------------------------------------------------

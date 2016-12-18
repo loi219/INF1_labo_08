@@ -18,9 +18,8 @@ void addRandValue(int tab[], const int nbElements, const int minElement,
 	}
 }
 
-
 void computeStat(const int tab[], const int nbElements, const int throws) {
-const int SPACE = 10;
+	const int SPACE = 10;
 
 	for (int i = 0; i < nbElements; i++) {
 
@@ -28,8 +27,9 @@ const int SPACE = 10;
 		cout << setw(SPACE) << "element [" << i << "]" << setw(SPACE)
 				<< percentElement << "    ";
 
-		for (int p = 0; p < percentElement; p++)
+		for (int p = 0; p < percentElement; p++) {
 			cout << "=";
-			cout << endl;
+		}
+		cout << endl;
 	}
 }
